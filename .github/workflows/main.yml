@@ -1,0 +1,10 @@
+name: simple
+on:
+  workflow_dispatch:
+jobs:
+ build:
+   runs-on: self-hosted
+   steps:
+    - name: run this code
+      run: |
+       kubectl get pods -A
