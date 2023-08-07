@@ -8,7 +8,7 @@ spec:
     image: gcr.io/kaniko-project/executor:latest
     args:
     - "--context=git://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@github.com/Zahidmad/gitops.git"
-    - "--destination=zramazanli/kaniko-demo-image:1.0"
+    - "--destination=zramazanli/kaniko-demo-image:2.0"
     volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
