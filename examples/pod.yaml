@@ -8,7 +8,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
     args:
-    - "--context=git://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@github.com/Zahidmad/apachespark.git"
+    - "--context=git://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@github.com/Zahidmad/gitops.git"
     - "--destination=zramazanli/spark-demo-image:2.0"
     - "--dockerfile=kubernetes/dockerfiles/spark/Dockerfile"
     volumeMounts:
