@@ -10,8 +10,7 @@ spec:
     args:
     - "--context=git://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@github.com/Zahidmad/gitops.git"
     - "--destination=zramazanli/spark-demo-image:2.0"
-    - "--dockerfile=kubernetes/dockerfiles/spark/Dockerfile"
-    volumeMounts:
+   volumeMounts:
     - name: kaniko-secret
       mountPath: /kaniko/.docker
   restartPolicy: Never
